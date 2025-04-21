@@ -7,7 +7,6 @@ export default defineHook(({ filter }, { services, env, emitter, logger }) => {
 	filter(`${COLLECTION_TEST}.items.create`, async ( payload: any, _, context ) => {
 		try {
 			const mainContext = { services, env, emitter, logger, ...context };
-			console.log(payload);
 			await verifyUniqueCode(payload, mainContext);
 		} catch (error) {
 			throw error;
