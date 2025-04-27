@@ -1,5 +1,5 @@
 import { Item, PrimaryKey, Query } from '@directus/types';
-import { ItemsService } from '@directus/api/dist/services/items';
+import { ItemsService } from '@directus/api/services/items';
 import { Context } from '../interfaces';
 
 

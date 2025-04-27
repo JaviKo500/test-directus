@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    // Otras opciones...
+    "types": ["vitest/globals"]
+  }
+}

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "start": "directus start"
   },
   "keywords": [],
@@ -12,6 +13,10 @@
   "description": "",
   "dependencies": {
     "@directus/errors": "^2.0.1",
+    "@vitest/coverage-v8": "^3.1.2",
     "directus": "11.6.1"
+  },
+  "devDependencies": {
+    "vitest": "^3.1.2"
   }
 }
