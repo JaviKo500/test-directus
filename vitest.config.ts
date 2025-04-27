@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitest/config'
+import { resolve } from 'path';
 
 export default defineConfig({
   test: {
@@ -12,6 +13,11 @@ export default defineConfig({
         'node_modules/',
         'dist/',
       ]
+    },
+  },
+  resolve: {
+    alias: {
+      '@directus/api': resolve(__dirname, 'node_modules/@directus/api')
     }
-  }
+  },
 })
